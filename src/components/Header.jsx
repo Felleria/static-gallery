@@ -16,12 +16,6 @@ const Header = () => {
           <li className="cursor-pointer hover:text-gray-500">
             <FaShoppingBag size={20} />
           </li>
-          <li className="cursor-pointer hover:text-gray-500 uppercase text-sm">
-            About Us
-          </li>
-          <li className="cursor-pointer hover:text-gray-500 uppercase text-sm">
-            Contact Us
-          </li>
         </ul>
       </nav>
 
