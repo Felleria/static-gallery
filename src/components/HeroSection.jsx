@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/path-to-your-image.jpg')" }}>
+    <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage :"url('/images/hero.jpg')"  }}>
       {/* Overlay for luxury feel */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
