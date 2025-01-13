@@ -3,8 +3,11 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage :"url('/images/hero.jpg')"  }}>
-      {/* Overlay for luxury feel */}
+      {/* lol giving fendi*/}
       <div className="absolute inset-0 bg-black opacity-50"></div>
+
+
+
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white space-y-6">
