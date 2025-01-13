@@ -7,6 +7,7 @@ const Header = () => {
       {/* Logo */}
       <h1 className="text-2xl font-bold font-playfair uppercase tracking-wide">Static</h1>
 
+
       {/* Navigation Links */}
       <nav className="hidden md:flex space-x-6">
         <ul className="flex space-x-6">
@@ -18,6 +19,8 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
+
 
       {/* Search Bar */}
       <form className="flex items-center border border-black rounded-lg px-4 py-1">
