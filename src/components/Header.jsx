@@ -3,7 +3,7 @@ import { FaHome, FaSearch, FaShoppingBag } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="bg-white text-black flex items-center justify-between px-6 py-4 shadow-md">
+    <header className="bg-white text-black fixed top-0 left-0 w-full z-50 shadow-md flex items-center justify-between px-6 py-4">
       {/* Logo */}
       <h1 className="text-2xl font-bold uppercase tracking-wide">Static</h1>
 
