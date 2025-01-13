@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="bg-white text-black fixed top-0 left-0 w-full z-50 shadow-md flex items-center justify-between px-6 py-4">
       {/* Logo */}
-      <h1 className="text-2xl font-bold uppercase tracking-wide">Static</h1>
+      <h1 className="text-2xl font-bold font-playfair uppercase tracking-wide">Static</h1>
 
       {/* Navigation Links */}
       <nav className="hidden md:flex space-x-6">
