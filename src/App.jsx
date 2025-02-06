@@ -5,7 +5,7 @@ import HeroSection from './components/HeroSection'
 import NewsletterSignup from './components/NewsletterSignup'
 import CollectionPreview from './components/CollectionPreview'
 HeroSection
-
+import ProductList from './components/ProductList'
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
       <CollectionPreview/>
       <NewsletterSignup/>
       <Footer/>
+      <ProductList/>
     </div>
   )
 }
