@@ -1,6 +1,9 @@
 from flask import Flask,Request,jsonify
 from flask_migrate import Migrate
 from models import db
+from models import db, User, Category, Product, Order, Cart, CartItem, Review
+
+from flask_cors import CORS
 
 # Initialize the Flask app
 app = Flask(__name__)
@@ -9,12 +12,22 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+#Allow requests from all the origins
+CORS(app)
+
 # Initialize db and migrate with the app
 db.init_app(app)
 migrate = Migrate(app, db)
 
 
 #HAHAHAHAHHAHAH FINALLYYYYYYY   API ROUTES TO HANDLE CRUD APPLICATION-----HAHAHAHAHAAHHAHAHAAHAH
+
+
+@app.route('/')
+def home():
+    return "API is running! Use proper endpoints like /users"
+
+
 
 # Create a new user
 @app.route('/users', methods=['POST'])
@@ -79,16 +92,21 @@ def create_product():
 
 
 # Get all products
+# Get a specific product by ID
 @app.route('/products', methods=['GET'])
 def get_products():
     products = Product.query.all()
-    return jsonify([{
-        'id': p.id,
-        'name': p.name,
-        'price': p.price,
-        'stock_quantity': p.stock_quantity,
-        'category': p.category.name
-    } for p in products])
+    return jsonify([
+        {
+            'id': p.id,
+            'name': p.name,
+            'description': p.description,
+            'price': p.price,
+            'image_url': p.image_url,
+            'stock_quantity': p.stock_quantity,
+            'category': p.category.name if p.category else None
+        } for p in products
+    ])
 
 
 # Create an order
@@ -165,7 +183,3 @@ if __name__ == '__main__':
 
 
 
-
-
-if __name__ == '__main__':
-    app.run(port=5555, debug=True)
