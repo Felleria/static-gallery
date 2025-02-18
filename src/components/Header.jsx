@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaHome, FaShoppingBag } from 'react-icons/fa';
+import { RiAccountCircle2Line , FaShoppingBag } from 'react-icons/fa';
+
 
 const Header = () => {
   return (
@@ -25,7 +26,7 @@ const Header = () => {
       <nav className="flex space-x-6">
         <ul className="flex space-x-6">
           <li className="cursor-pointer hover:text-gray-500">
-            <FaHome size={20} />
+          <RiAccountCircle2Line />
           </li>
           <li className="cursor-pointer hover:text-gray-500">
             <FaShoppingBag size={20} />
