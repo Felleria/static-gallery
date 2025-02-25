@@ -22,7 +22,7 @@ const CollectionPreview = () => {
           {}
           <div className="group relative">
             <img
-              src="/images/TOPS.png"
+              src="/TOPS.png"
               alt="Collection Item 1"
               className="w-full h-96 object-cover rounded-lg"
             />
@@ -38,7 +38,7 @@ const CollectionPreview = () => {
           {}
           <div className="group relative">
             <img
-              src="/images/STATIC.png"
+              src="/STATIC.png"
               alt="Collection Item 2"
               className="w-full h-96 object-cover rounded-lg"
             />
@@ -54,7 +54,7 @@ const CollectionPreview = () => {
           {}
           <div className="group relative">
             <img
-              src="/images/CAP.png"
+              src="/CAP.png"
               alt="Collection Item 3"
               className="w-full h-96 object-cover rounded-lg"
             />

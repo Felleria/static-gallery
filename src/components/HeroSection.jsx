@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/images/hero.jpg')" }}>
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+    <section className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/hero.jpg')" }}>
+
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white space-y-6">
         <h2 className="text-4xl md:text-6xl font-playfair   tracking-wide">
@@ -29,3 +29,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
