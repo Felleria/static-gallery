@@ -6,8 +6,8 @@ import HeroSection from "./components/HeroSection";
 import NewsletterSignup from "./components/NewsletterSignup";
 import CollectionPreview from "./components/CollectionPreview";
 import ProductPage from "./components/ProductPage";
-import ProductsList from './components/ProductsList'; 
-
+import ProductsList from './components/ProductsList';
+import DevBanner from "./components/DevBanner"; // <– Import the custom banner
 
 const HomePage = () => (
   <>
@@ -21,6 +21,7 @@ const App = () => {
   return (
     <Router>
       <div>
+        <DevBanner /> {/* Add the banner here */}
         <Header/>
         <Routes>
           <Route path="/" element={<HomePage />} />
